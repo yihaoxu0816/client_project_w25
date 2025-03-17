@@ -19,6 +19,7 @@ header {
 
 #selected {
     color: #FFCB05;
+    text-decoration: underline;
 }
 
 #logo {
