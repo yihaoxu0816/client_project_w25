@@ -3,65 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>MSI Degree Requirements</title>
 </head>
 <body>
 
+    <a id="skip" href = "#main_content_start">Skip to Main Content</a>
     <header>
-            <a href = "#main_content_start">Skip to Main Content</a>
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-            <nav>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "student_life.html">Student Life</a></li>
-                    <li><a href="MSI_advising.html">MSI Advising Resources</a></li>
-                    <li><a href="tutoring.html">MSI Tutoring Center</a></li>
-                </ul>
-            </nav>
-        <h1>MSI Advising Resources</h1>
-
+        <nav>
+            <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <ul id="navigation">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "student_life.html">Student Life</a></li>
+                <li><a href="MSI_advising.html" id="selected">Advising</a></li>
+                <li><a href="tutoring.html">Tutoring</a></li>
+            </ul>
+        </nav>
     </header>
-    <main id="main_content_start">
 
-        <section>
-            <h2>Understanding the Degree</h2>
+    <main id="main_content_start">
+        <section class="heading-content">
+            <h1>UMSI ADVISING RESOURCES</h1>
+        </section>
+
+        <section class="body-content">
+            <h2>UNDERSTANDING THE DEGREE</h2>
             <p>To earn a Master of Science in Information at the School of Information, you must complete a minimum of 48 credit hours of graduate coursework, with a minimum grade average of B (3.0 minimum cumulative GPA required), including required coursework. Note that within the 48 credit hours of graduate coursework, a minimum of 39 credits must be coursework taken within UMSI (SI credit).
             </p>
 
             <img src="images/msi_advising/MSI_requirement.png" width="600" alt="credit number requirements for MSI Degree">
         </section>
 
-        <section>
-            <h2>Fall 2024 Cohort Degree Requirements</h2>
+        <section class="body-content">
+            <h2>DEGREE REQUIREMENTS</h2>
             <p>This section aims to provide you with additional information regarding your specific degree requirements.
             </p>
 
-            <section>
-                <h3>Big Data Analytics</h3>
-                <img src="images/msi_advising/big_data_analytics.png" width="150" alt="Big Data Analytics">
-                <button>Degree Requirements</button>
-                <button>Course Planning Sheet</button>
-            </section>
+            <section id="degree-requirement">
 
-            <section>
-                <h3>UX Research & Design</h3>
-                <img src="images/msi_advising/ux_research_design.png" width="150" alt="UX Research & Design">
-                <button>Degree Requirements</button>
-                <button>Course Planning Sheet</button>
-            </section>
+                <section>
+                    <img src="images/msi_advising/big_data_analytics.png" width="150" alt="Big Data Analytics">
+                    <button>Degree Requirements</button>
+                    <button>Course Planning Sheet</button>
+                </section>
 
-            <section>
-                <h3>Libraries, Archives, and Knowledge Environments in Society (LAKES)</h3>
-                <img src="images/msi_advising/lakes.png" width="150" alt="Libraries, Archives, and Knowledge Environments in Society (LAKES)">
-                <button>Degree Requirements</button>
-                <button>Course Planning Sheet</button>
-            </section>
+                <section>
+                    <img src="images/msi_advising/ux_research_design.png" width="150" alt="UX Research & Design">
+                    <button>Degree Requirements</button>
+                    <button>Course Planning Sheet</button>
+                </section>
 
-            <section>
-                <h3>User-Centered Agile Development</h3>
-                <img src="images/msi_advising/user_centered_agile.png" width="150" alt="User-Centered Agile Development">
-                <button>Degree Requirements</button>
-                <button>Course Planning Sheet</button>
+                <section>
+                    <img src="images/msi_advising/lakes.png" width="150" alt="Libraries, Archives, and Knowledge Environments in Society (LAKES)">
+                    <button>Degree Requirements</button>
+                    <button>Course Planning Sheet</button>
+                </section>
+
+                <section>
+                    <img src="images/msi_advising/user_centered_agile.png" width="150" alt="User-Centered Agile Development">
+                    <button>Degree Requirements</button>
+                    <button>Course Planning Sheet</button>
+                </section>
+
             </section>
 
             <h3>How to Use Course Planning Worksheets</h3>
@@ -75,8 +79,8 @@
 
         </section>
 
-        <section>
-            <h2>Elective Options</h2>
+        <section class="body-content">
+            <h2>ELECTIVE OPTIONS</h2>
             <p>MSI students must enroll in various elective courses to fulfill the 48 total graduate-level credit requirements for the MSI degree. Up to 9 of the graduate-level credits that count toward the MSI degree can be completed from a UM School or College outside of UMSI.
             </p>
 
@@ -89,8 +93,8 @@
             <p></p>
         </section>
 
-        <section>
-            <h2>Academic Advising</h2>
+        <section class="body-content">
+            <h2>ACADEMIC ADVISING</h2>
             <p>Academic Advising is a process where students envision, execute, and reflect on their academic plans with guidance from a qualified UMSI Academic Advisor. Students share their goals, challenges, and questions with their academic advisor, and their academic advisor contributes knowledge of university and program requirements, policies, and processes. Together, we develop an academic plan that aligns with the student's personal and professional goals. </p>
 
             <section>
@@ -102,15 +106,18 @@
                     <li>Connecting with student support resources and services</li>
                     <li>Navigating a disruption to your MSI experience</li>
                 </ul>
-                <button>Schedule 1:1 Appointment</button>
-                <button>Drop In 1:1 Appointment</button>
-                <button>Email Us</button>
+                <section id="advisor-help-buttons-container">
+                    <button>Schedule 1:1 Appointment</button>
+                    <button>Drop In 1:1 Appointment</button>
+                    <button>Email Us</button>
+                </section>
             </section>
         </section>
         
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <img id="footer-logo" src="images/U-M_Logo-Hex.png" alt="University of Michigan Logo">
     </footer>
     
 </body>

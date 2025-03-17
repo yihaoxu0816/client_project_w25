@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Student Success Portal</title>
 </head>
 <body>
-
+    
+    <a id="skip" href = "#main_content_start">Skip to Main Content</a>
     <header>
-        <a href = "#main_content_start">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
+            <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <ul id="navigation">
+                <li><a href = "index.html" id="selected">Home</a></li>
                 <li><a href = "student_life.html">Student Life</a></li>
-                <li><a href="MSI_advising.html">MSI Advising Resources</a></li>
-                <li><a href="tutoring.html">MSI Tutoring Center</a></li>
+                <li><a href="MSI_advising.html">Advising</a></li>
+                <li><a href="tutoring.html">Tutoring</a></li>
             </ul>
         </nav>
-        <h1>UMSI Student Success Portal</h1>
-
     </header>
+
     <main id="main_content_start">
-        <section>
-            <h2>Welcome to the UMSI Student Success Navigator</h2>
+        <section class="heading-content">
+            <h1>UMSI STUDENT SUCCESS PORTAL</h1>
+        </section>
+
+        <section class="body-content">
+            <h2>WELCOME! </h2>
             <p> Your Comprehensive Guide to Resources for UMSI School Success</p>
             <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
-            <ol>
+            <ul>
                 <li>Academic Advising</li>
                 <li>Student Life</li>
                 <li>Tutoring</li>
-            </ol>
+            </ul>
         </section>
     
-        <section>
-            <h2>Academic Advising Resources</h2>
+        <section class="body-content">
+            <h2>ACADEMIC ADVISING RESOURCES</h2>
             <p>The Academic Advising Resources page helps students navigate course planning and stay on track for graduation. Academic advisors empower students to make decisions that align with their academic and career goals. The resources available at Academic Advising Resources include: </p>
             <ul>
                 <li>Degree & Graduation Requirements</li>
@@ -47,8 +52,8 @@
             
         </section>
         
-        <section>
-            <h2>Student Life</h2>
+        <section class="body-content">
+            <h2>STUDENT LIFE</h2>
             <p>The Student Life page provides resources and opportunities to help students achieve a healthy school-life balance while studying at U-M and living in Ann Arbor. From campus events to wellness services, it highlights the importance of thriving both academically and personally in a dynamic community. The resources available at Student Life include:</p>
             <ul>
                 <li>Student Organizations</li>
@@ -60,8 +65,8 @@
         </section>
 
         
-        <section>
-            <h2>Tutoring</h2>
+        <section class="body-content">
+            <h2>TUTORING</h2>
             <p>The Tutoring page offers a variety of academic support resources to help students overcome challenges in their courses. U-M ensures that every student has the tools to succeed academically and build confidence in their learning journey. The resources available at Tutoring include:</p>
             <ul>
                 <li>UMSI Programming Peer Tutoring</li>
@@ -76,6 +81,7 @@
     </main>
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <img id="footer-logo" src="images/U-M_Logo-Hex.png" alt="University of Michigan Logo">
+    </footer>
 </body>
 </html>

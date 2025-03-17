@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+#skip {
+    position: absolute;
+    top: -100px;
+}
+
+/* ------Header Styles--------- */
+
+header {
+    background-color: #00274C;
+}
+
+#selected {
+    color: #FFCB05;
+}
+
+#logo {
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+nav {
+    margin: 0px 10px 0px 10px;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #00274C;
+    background-color: white;
+}
+
+
+
+/* --------Main Styles---------- */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+p, li {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    color: #00274C;
+}
+
+main img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0px;
+}
+
+.heading-content, .body-content {
+    grid-column: 1 / -1;
+}
+
+.heading-content {
+    height: 200px;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-content::before {
+    background-image: url("../images/home/heading.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.25;
+    z-index: -1;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-weight:800;
+    margin: 20px;
+    color: #FFCB05;
+    line-height: 40px;
+}
+
+.body-content {
+    margin: 0px 20px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 20px 0px 10px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 25px;
+    margin: 20px 0px 10px;
+}
+
+h4 {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 14px 0px 10px;
+    font-weight: 600;
+}
+
+main ul, main ol {
+    margin: 10px 20px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+#degree-requirement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+main button {
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    background-color: #FFCB05;
+    color: #00274C;
+    margin: 10px;
+}
+
+main button:hover {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+/* Advising page only */
+
+
+#degree-requirement button {
+    display: block;
+    margin: 15px auto;
+}
+
+#advisor-help-buttons-container button {
+    display: block;
+    margin: 15px auto;
+    width: 300px;
+}
+
+/* Student Life page only */
+
+.student-org, .tutors {
+    background-color: #e4e4e4;
+    padding: 15px 20px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 12px;
+}
+
+
+
+
+/* ------Footer Styles------- */
+
+footer {
+    background-color: #00274C;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+#footer-logo {
+    width: 100px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFCB05;
+}
+
+footer a:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+}

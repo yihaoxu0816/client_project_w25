@@ -3,64 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Pantry</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>UMSI Student Life</title>
 </head>
 <body>
 
+    <a id="skip" href = "#main_content_start">Skip to Main Content</a>
     <header>
-            <a href = "#main_content_start">Skip to Main Content</a>
-            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
-            <ul>
+            <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <ul id="navigation">
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "student_life.html">Student Life</a></li>
-                <li><a href="MSI_advising.html">MSI Advising Resources</a></li>
-                <li><a href="tutoring.html">MSI Tutoring Center</a></li>
+                <li><a href = "student_life.html" id="selected">Student Life</a></li>
+                <li><a href="MSI_advising.html">Advising</a></li>
+                <li><a href="tutoring.html">Tutoring</a></li>
             </ul>
         </nav>
-        <h1>UMSI Student Life</h1>
-
     </header>
 
     <main id="main_content_start">
+        <section class="heading-content">
+            <h1>UMSI STUDENT LIFE</h1>
+        </section>
         
-        <section>
-            <h2>Living in U-M</h2>
+        <section class="body-content">
+            <h2>LIVING IN U-M</h2>
             <p>UMSI Student Life’s mission is to enrich each UMSI student’s experience while cultivating an inclusive and welcoming community at the school. We are committed to enhancing student educational experiences through programs, services, and opportunities that develop skills and foster a positive and accessible environment for all UMSI students starting with orientation through graduation. While considering multiple aspects of the student experience, Student Life strives to engage every student across UMSI’s academic programs through its pillars of student leadership, community, well-being and campus life.</p>
             <img src="images/student_life/UMSI_DesignJam_02142022_07.jpg" width="300" alt="students gathering around a desk watching a student drawing">
         </section>
 
-        <section>
-            <h2>Student Organizations</h2>
+        <section class="body-content">
+            <h2>STUDENT ORGANIZATIONS</h2>
             <p>There are a variety of student organizations at UMSI. Student organizations are a great way to learn new skills, meet other students and get involved in the broader U-M and Ann Arbor community.</p>
 
             <section>
                 <h3>Sponsored student organizations</h3>
-                <h4>Doctoral Student Organization (DSO)</h4>
-                <p>The DSO is an organization that includes all School of Information (SI) doctoral students. The mission of the DSO is to provide both academic and social support to all SI doctoral students. Email: si-dec@umich.edu</p>
 
-                <h4>Health Informatics Student Organization (HISO)</h4>
-                <p>The Health Informatics Student Organization (HISO) serves as a forum for cohort-building activities, professional skills development, networking and student-led projects within the Master of Health Informatics program. HISO exists to also strengthen our relationships with the University of Michigan School of Information and School of Public Health communities. Email: hiso-board@umich.edu.</p>
+                <div class="student-org">
+                    <h4>Doctoral Student Organization (DSO)</h4>
+                    <p>The DSO is an organization that includes all School of Information (SI) doctoral students. The mission of the DSO is to provide both academic and social support to all SI doctoral students. Email: si-dec@umich.edu</p>
+                </div>
 
-                <h4>Master of Applied Data Science Association (MADSA)</h4>
-                <p>MADSA was established to serve the unique needs of Master of Applied Data Science (MADS) students by providing students with: representation and a formal mechanism for communication with the School of Information and University of Michigan; networking and social opportunities to bring together students, faculty, staff and alumni in a global community; professional development, life-long learning, and alumni connections support; and an inclusive space that strives to promote an equal and diverse representation of the MADS student body in a collaborative manner that is open and transparent. MADSA strives to push for the inclusion of the MADS program within UMSI, advocating for remote access to all learning opportunities for MADS students across all regions and time zones. Email: madsaofficers@umich.edu</p>
+                <div class="student-org">
+                    <h4>Health Informatics Student Organization (HISO)</h4>
+                    <p>The Health Informatics Student Organization (HISO) serves as a forum for cohort-building activities, professional skills development, networking and student-led projects within the Master of Health Informatics program. HISO exists to also strengthen our relationships with the University of Michigan School of Information and School of Public Health communities. Email: hiso-board@umich.edu.</p>
+                </div>
+
+                <div class="student-org">
+                    <h4>Master of Applied Data Science Association (MADSA)</h4>
+                    <p>MADSA was established to serve the unique needs of Master of Applied Data Science (MADS) students by providing students with: representation and a formal mechanism for communication with the School of Information and University of Michigan; networking and social opportunities to bring together students, faculty, staff and alumni in a global community; professional development, life-long learning, and alumni connections support; and an inclusive space that strives to promote an equal and diverse representation of the MADS student body in a collaborative manner that is open and transparent. MADSA strives to push for the inclusion of the MADS program within UMSI, advocating for remote access to all learning opportunities for MADS students across all regions and time zones. Email: madsaofficers@umich.edu</p>
+                </div>
             </section>
 
             <section>
                 <h3>Voluntary student organizations</h3>
 
-                <h4>American Library Association (ALA)</h4>
-                <p>The mission of the American Library Association Student Chapter is to promote awareness of, interest in and involvement in libraries, librarianship and information services among all students at the University of Michigan School of Information. To achieve our mission, we will create a space for discussing relevant issues, provide opportunities for professional development and encourage participation in the University of Michigan community and beyond. Email: alaofficers@umich.edu</p>
+                <div class="student-org">
+                    <h4>American Library Association (ALA)</h4>
+                    <p>The mission of the American Library Association Student Chapter is to promote awareness of, interest in and involvement in libraries, librarianship and information services among all students at the University of Michigan School of Information. To achieve our mission, we will create a space for discussing relevant issues, provide opportunities for professional development and encourage participation in the University of Michigan community and beyond. Email: alaofficers@umich.edu</p>
+                </div>
 
-                <h4>Atlas Digital Consulting Group</h4>
-                <p>Technology is expanding faster than ever. In today’s increasingly tech-oriented world, keeping up to date with the latest innovations and technologies in the industry is a necessity towards a business’s success. Our organization caters to this need by providing clients with the latest technological solutions. Our talented team of consultants based in the University of Michigan provides a wide range of pro-bono services in full-stack development ranging from web development to machine learning solutions. By doing our work free of charge, not only are we able to help local businesses and make a positive impact within our community, but we are also able to further develop our technical and soft skills, improving ourselves as students. Email: ad-eboard@umich.edu</p>
+                <div class="student-org">
+                    <h4>Atlas Digital Consulting Group</h4>
+                    <p>Technology is expanding faster than ever. In today’s increasingly tech-oriented world, keeping up to date with the latest innovations and technologies in the industry is a necessity towards a business’s success. Our organization caters to this need by providing clients with the latest technological solutions. Our talented team of consultants based in the University of Michigan provides a wide range of pro-bono services in full-stack development ranging from web development to machine learning solutions. By doing our work free of charge, not only are we able to help local businesses and make a positive impact within our community, but we are also able to further develop our technical and soft skills, improving ourselves as students. Email: ad-eboard@umich.edu</p>
+                </div>
 
-                <h4>Black@SI</h4>
-                <p>Black@SI is an academic and social support network that serves Black students, alumni and accomplices of the University of Michigan School of Information (UMSI). Through our programming, we help ensure that underrepresented students can successfully contribute to both scientific research and the college’s learning environment, and positively impact our communities. Email: blackatsiorganizers@gmail.com</p>
+                <div class="student-org">
+                    <h4>Black@SI</h4>
+                    <p>Black@SI is an academic and social support network that serves Black students, alumni and accomplices of the University of Michigan School of Information (UMSI). Through our programming, we help ensure that underrepresented students can successfully contribute to both scientific research and the college’s learning environment, and positively impact our communities. Email: blackatsiorganizers@gmail.com</p>
+                </div>
             </section>
         </section>
 
-        <section>
+        <section class="body-content">
             <h2>Health and Wellness</h2>
             <img src="images/student_life/MCOMMONS-WinterSemester2025-01.jpg" width="300" alt="Two students sitting in campus common area and chatting">
             <p>We value wellness and understand the importance of students maintaining their physical and mental health throughout their time at UMSI. There are many campus and community resources available to support your overall well-being.</p>
@@ -81,8 +97,8 @@
             </section>
         </section>
 
-        <section>
-            <h2>Life in Ann Arbor</h2>
+        <section class="body-content">
+            <h2>LIFE IN ANN ARBOR</h2>
             <img src="images/student_life/UMSI_fallday_10.5.22_1775_0.jpg" alt="Ann Arbor Street View">
 
             <section>
@@ -119,8 +135,10 @@
         </section>
 
     </main>
+
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <img id="footer-logo" src="images/U-M_Logo-Hex.png" alt="University of Michigan Logo">
     </footer>
     
 </body>
