@@ -11,11 +11,14 @@
     
     <a id="skip" href = "#main_content_start">Skip to Main Content</a>
     <header>
-        <nav>
-            <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>   
+            <div id="logo_plus_heading">
+                <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+                <p id="nav_heading">STUDENT SUCCESS PORTAL</p>
+            </div>
             <ul id="navigation">
                 <li><a href = "index.html" id="selected">Home</a></li>
-                <li><a href = "student_life.html">Student Life</a></li>
+                <li><a href = "student_life.html">Life</a></li>
                 <li><a href="MSI_advising.html">Advising</a></li>
                 <li><a href="tutoring.html">Tutoring</a></li>
             </ul>
@@ -26,7 +29,7 @@
         <section class="heading-content">
             <h1>UMSI STUDENT SUCCESS PORTAL</h1>
         </section>
-
+        
         <section class="body-content">
             <h2>WELCOME! </h2>
             <p> Your Comprehensive Guide to Resources for UMSI School Success</p>
@@ -37,43 +40,107 @@
                 <li>Tutoring</li>
             </ul>
         </section>
-    
-        <section class="body-content">
-            <h2>ACADEMIC ADVISING RESOURCES</h2>
-            <p>The Academic Advising Resources page helps students navigate course planning and stay on track for graduation. Academic advisors empower students to make decisions that align with their academic and career goals. The resources available at Academic Advising Resources include: </p>
-            <ul>
-                <li>Degree & Graduation Requirements</li>
-                <li>Course Planning Sheets for different MSI Tracks</li>
-                <li>Elective Information</li>
-                <li>Schedule Appointments with Advisors</li>
-            </ul>
+        
+        <div class="grid-wrapper" id="home-grid">
+            <section class="body-content">
+                <h2>ACADEMIC ADVISING RESOURCES</h2>
 
-            <img src="images/home/UMSI_CampusFall_UMSIBackpack_02.jpg" width="500" alt="back of a student with a U-M backpack walking in the campus">
+                <p>The Academic Advising Resources page helps students navigate course planning and stay on track for graduation. Academic advisors empower students to make decisions that align with their academic and career goals. The resources available at Academic Advising Resources include: </p>
+                <ul>
+                    <li>Degree & Graduation Requirements</li>
+                    <li>Course Planning Sheets for different MSI Tracks</li>
+                    <li>Elective Information</li>
+                    <li>Schedule Appointments with Advisors</li>
+                </ul>
+                
+                <img src="images/home/UMSI_CampusFall_UMSIBackpack_02.jpg" width="500" alt="back of a student with a U-M backpack walking in the campus">
+                
+            </section>
             
-        </section>
-        
+            <section class="body-content">
+                <h2>STUDENT LIFE</h2>
+
+                <p>The Student Life page provides resources and opportunities to help students achieve a healthy school-life balance while studying at U-M and living in Ann Arbor. From campus events to wellness services, it highlights the importance of thriving both academically and personally in a dynamic community. The resources available at Student Life include:</p>
+                <ul>
+                    <li>Student Organizations</li>
+                    <li>Health and Wellness</li>
+                    <li>Life at Ann Arbor</li>
+                </ul>
+
+                <img src="images/home/MCOMMONS-09072024_FanExperience-11.jpg" width="500" alt="U-M Students with college shirts on cheering in front of camera">
+            </section>
+
+            
+            <section class="body-content">
+                <h2>TUTORING</h2>
+
+                <p>The Tutoring page offers a variety of academic support resources to help students overcome challenges in their courses. U-M ensures that every student has the tools to succeed academically and build confidence in their learning journey. The resources available at Tutoring include:</p>
+                <ul>
+                    <li>UMSI Programming Peer Tutoring</li>
+                    <li>UMSI Math Peer Tutoring</li>
+                </ul>
+
+                <img src="images/home/UMSI_SI311_10132021_002.JPG" width="500" alt="Two U-M Students learning in front of a laptop screen">
+            </section>
+        </div>
+
         <section class="body-content">
-            <h2>STUDENT LIFE</h2>
-            <p>The Student Life page provides resources and opportunities to help students achieve a healthy school-life balance while studying at U-M and living in Ann Arbor. From campus events to wellness services, it highlights the importance of thriving both academically and personally in a dynamic community. The resources available at Student Life include:</p>
-            <ul>
-                <li>Student Organizations</li>
-                <li>Health and Wellness</li>
-                <li>Life at Ann Arbor</li>
-            </ul>
+            <h2>CONTACT US</h2>
+            <p>Have questions or need help? We are here for you. </p>
+            <br>
 
-            <img src="images/home/MCOMMONS-09072024_FanExperience-11.jpg" width="500" alt="U-M Students with college shirts on cheering in front of camera">
-        </section>
+            <form action="https://formspree.io/f/xyzebjgr" method="POST">
+                <fieldset>
+                    <legend>Your Information</legend>
 
-        
-        <section class="body-content">
-            <h2>TUTORING</h2>
-            <p>The Tutoring page offers a variety of academic support resources to help students overcome challenges in their courses. U-M ensures that every student has the tools to succeed academically and build confidence in their learning journey. The resources available at Tutoring include:</p>
-            <ul>
-                <li>UMSI Programming Peer Tutoring</li>
-                <li>UMSI Math Peer Tutoring</li>
-            </ul>
+                    <div id="name-field">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input type="text" placeholder="First Name" id="first-name-id" name="first-name">
+                        </div>
 
-            <img src="images/home/UMSI_SI311_10132021_002.JPG" width="500" alt="Two U-M Students learning in front of a laptop screen">
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" placeholder="Last Name" id="last-name-id" name="last-name">
+                        </div>
+                    </div>
+
+                    <label for="last-name">Email</label>
+                    <input type="text" placeholder="example@email.com" id="email-id" name="email">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>What kind of help do you need? </legend>
+
+                    <div class="radio-wrapper">
+                        <input type="radio" id="student-life" name="request-type" value="Student Life" checked>
+                        <label for="student-life">Student Life</label>
+                    </div>
+
+                    <div class="radio-wrapper">
+                        <input type="radio" id="advising" name="request-type" value="Advising">
+                        <label for="advising">Advising</label>
+                    </div>
+
+                    <div class="radio-wrapper">
+                        <input type="radio" id="tutoring" name="request-type" value="Tutoring">
+                        <label for="tutoring">Tutoring</label>
+                    </div>
+
+                    <div class="radio-wrapper">
+                        <input type="radio" id="other" name="request-type" value="Advising">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <textarea name="message" id="message" placeholder="Enter your message here..."></textarea>
+                </fieldset>
+                
+                <input type="submit" value="Contact us">
+            </form>
         </section>
 
 
@@ -82,6 +149,10 @@
     <footer>
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
         <img id="footer-logo" src="images/U-M_Logo-Hex.png" alt="University of Michigan Logo">
+        <p>© Copyright <span id="year"></span> by Andy Xu. All rights reserved. </p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>
