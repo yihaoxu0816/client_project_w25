@@ -201,26 +201,14 @@ main button:hover {
 
 #degree-requirement button {
     display: block;
-    margin: auto;
+    margin: 10px auto;
     
 }
 
 #advisor-help-buttons-container button {
     display: block;
     width: 300px;
-}
-
-a.advising-links {
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-a.advisor-links {
-    display: inline-block;
-    margin: 15px 15px;
-    text-decoration: none;
+    margin: 10px auto;
 }
 
 /* Student Life page only */
@@ -322,6 +310,7 @@ textarea {
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid #00274C;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
